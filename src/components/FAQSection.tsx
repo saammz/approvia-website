@@ -8,11 +8,11 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "How does Approvia Search integrate with our existing tools?",
-      answer: "Approvia Search integrates seamlessly with popular platforms like Confluence, Notion, SharePoint, Google Drive, and many more through our robust API connections."
+      question: "How does Approovia Search integrate with our existing tools?",
+      answer: "Approovia Search integrates seamlessly with popular platforms like Confluence, Notion, SharePoint, Google Drive, and many more through our robust API connections."
     },
     {
-      question: "Is our data secure with Approvia Search?",
+      question: "Is our data secure with Approovia Search?",
       answer: "Yes, we take security seriously. We use enterprise-grade encryption, comply with SOC 2 Type II standards, and never store your actual data on our servers."
     },
     {
@@ -30,12 +30,12 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-section-bg">
+    <section className="py-16 bg-section-bg dark:bg-[#003366]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
           <p className="text-lg">
-            Everything you need to know about Approvia Search
+            Everything you need to know about Approovia Search
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
@@ -43,7 +43,7 @@ const FAQSection = () => {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground dark:text-white">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
